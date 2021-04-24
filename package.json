@@ -1,0 +1,24 @@
+{
+  "name": "mywrap",
+  "version": "1.0.0",
+  "description": "simple pooled mysql wrapper module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpollen8/mywrap.git"
+  },
+  "keywords": [
+    "mysql",
+    "wrapper",
+    "node"
+  ],
+  "author": "xpollen8",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xpollen8/mywrap/issues"
+  },
+  "homepage": "https://github.com/xpollen8/mywrap#readme"
+}
