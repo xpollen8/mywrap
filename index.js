@@ -1,6 +1,6 @@
 module.exports = class MyWrap {
 	constructor(config) {
-		const defaultConfig = {
+		this.myConfig = {
 			insecureAuth: true,
 			host     : 'localhost',
 			waitForConnections: true,
@@ -8,10 +8,7 @@ module.exports = class MyWrap {
 			queueLimit: 0,
 			user     : 'root',
 			password: '',
-			database : ''
-		};
-		this.myConfig = {
-			...defaultConfig,
+			database: '',
 			...config,
 		};
 	}
