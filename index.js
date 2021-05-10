@@ -11,11 +11,15 @@ module.exports = class MyWrap {
 			database: '',
 			...config,
 		};
+		this.mysql = require('mysql2/promise');
 	}
 	setDb = (db) => this.db = db;
 	getDb = () => this.db;
-	start = async () => {
-		this.setDb(await require('mysql2/promise').createPool(this.myConfig));
+	start = async (config) => {
+		this.setDb(await require('mysql2/promise').createPool({
+			...this.myConfig,
+			...config
+		}));
 	}
 	finish = async () => {
 		const db = this.db;
