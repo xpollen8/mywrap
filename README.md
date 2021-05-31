@@ -1,6 +1,9 @@
 # myWrap
 
-A very simple pooled mysql wrapper w/over-ridable defaults
+A very simple mysql wrapper w/over-ridable defaults
+
+Serverless-ready thanks to the efforts of https://www.jeremydaly.com/serverless-mysql-at-scale/,
+upon which this is built.
 
 # Install
 
@@ -14,10 +17,6 @@ npm i --save https://github.com/xpollen8/mywrap
 const myWrap = require('mywrap');
 
 const db = new myWrap({
-    insecureAuth: true|false,        // default: true
-    waitForConnections: true|false,  // default: true
-    connectionLimit: 10,             // default: 10
-    queueLimit: 0                    // default: 0 (unlimited)
     host: '...',                     // default: 'localhost'
     user: '...',                     // default: 'root'
     password: '...',                 // default: ''
