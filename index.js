@@ -10,12 +10,12 @@ module.exports = class MyWrap {
 			database: '',
 			...config,
 		};
-		this.mysql = require('mysqljs/mysql');
+		this.mysql = require('mysql');
 	}
 	setDb = (db) => this.db = db;
 	getDb = () => this.db;
 	start = async (config) => {
-		this.setDb(await require('mysqljs/mysql').createPool({
+		this.setDb(await require('mysql').createPool({
 			...this.myConfig,
 			...config
 		}));
