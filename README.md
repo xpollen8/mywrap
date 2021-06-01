@@ -2,9 +2,6 @@
 
 A very simple mysql wrapper w/over-ridable defaults
 
-Serverless-ready thanks to the efforts of https://www.jeremydaly.com/serverless-mysql-at-scale/,
-upon which this is built.
-
 # Install
 
 ```
