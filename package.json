@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/xpollen8/mywrap#readme",
   "dependencies": {
-    "mysql2": "^2.2.5",
+    "mysql2": "^2.2.5"
   }
 }
