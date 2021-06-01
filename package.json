@@ -1,6 +1,6 @@
 {
   "name": "mywrap",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "simple mysql wrapper module",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,6 @@
   },
   "homepage": "https://github.com/xpollen8/mywrap#readme",
   "dependencies": {
-    "mysql2": "^2.2.5"
+    "mysql": "github:mysqljs/mysql"
   }
 }
