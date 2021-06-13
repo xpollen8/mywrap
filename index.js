@@ -16,15 +16,21 @@ module.exports = class MyWrap {
 	setDb = (db) => this.db = db;
 	getDb = () => this.db;
 	start = async (config) => {
-		/*
+		/* non-serverless
 		this.setDb(await require('mysql').createPool({
 			...this.myConfig,
 			...config
 		}));
 		*/
 		this.setDb(await require('serverless-mysql')({
+			/* non-serverless
 			config: this.myConfig,
 			...config	// mysql-serverless options
+			*/
+			config: {
+			...this.myConfig,
+			...config	// mysql-serverless options
+			}
 			}));
 		return this.getDb();
 	}
