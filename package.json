@@ -24,6 +24,6 @@
   "dependencies": {
     "mysql": "github:mysqljs/mysql",
     "mysql2": "^3.2.0",
-    "serverless-mysql": "^1.5.4"
+    "serverless-mysql": "^1.5.5"
   }
 }
