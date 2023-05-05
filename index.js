@@ -1,7 +1,7 @@
 module.exports = class MyWrap {
 	constructor(config) {
 		this.myConfig = {
-			host     : 'localhost',
+			host     : '127.0.0.1',
 			waitForConnections: true,
 			connectionLimit: 10,
 			queueLimit: 0,
