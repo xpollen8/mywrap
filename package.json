@@ -23,7 +23,7 @@
   "homepage": "https://github.com/xpollen8/mywrap#readme",
   "dependencies": {
     "mysql": "github:mysqljs/mysql",
-    "mysql2": "^3.4.3",
+    "mysql2": "^3.5.1",
     "serverless-mysql": "^1.5.5"
   }
 }
